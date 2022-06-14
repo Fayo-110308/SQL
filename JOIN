@@ -1,0 +1,9 @@
+SELECT
+employees.name AS employees_name,
+employees.role AS employee_role,
+departments.name AS department_name
+FROM
+employees_data.employees
+RIGHT JOIN
+departments ON
+employees.department_id = department.department_id
